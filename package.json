@@ -1,0 +1,32 @@
+{
+  "name": "supermaket_delivery_api",
+  "version": "1.0.0",
+  "description": "supermaket delivey",
+  "main": "index.js",
+  "repository": "https://github.com/TomasSantosz/supermarket_delivery.git",
+  "author": "Tomas Santos",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --transpileOnly --inspect --ignore node_modules src/shared/infra/http/server.ts",
+    "start": "ts-node src/shared/infra/http/server.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.2.1",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.3.0",
+    "typeorm": "^0.2.25"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.5"
+  }
+}
